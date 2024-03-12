@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chan POS</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header> 
+          <h1>Welcome to the Canteen! Here are our street foods menu.</h1>
+    </header>
+
+    <p>Prices are shown below. <i>Click finalize</i> order button once you're sure with your orders.</p>
+    <ul>
+      <li>Burger - 60 Pesos</li>
+      <li>Fries - 50 Pesos</li>
+      <li>Fishbol - 20 Pesos</li>
+      <li>Kikiam - 25 Pesos</li>
+  </ul>
+
+    <button type="button" onclick="">Add a food item</button>
+    <Label for="foodOpt">Choice</Label>
+    <select name="foodOpt" id="foodOptions">
+    <option value="burger" id="burger">Burger</option>
+    <option value="fries" id="fries">Fries</option>
+    <option value="fishbol" id="fishbol">Fishbol</option>
+    <option value="kikiam" id="kikiam">Kikiam</option>        
+    </select>
+
+    <label for="quantity">Quantity</label>
+    <input type="text" name="quantity" id="quantity">
+    <button onclick="finalOrder()">Finalize Order</button>
+
+    <div id="added-item"></div>
+
+    <Label for="payment">Cash</Label>
+    <input type="number" name="payment" id="payment">
+    <button onclick="totalPay()">Pay!</button>
+    <script src="script.js"></script>
+</body>
+</html>
